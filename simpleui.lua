@@ -50,7 +50,7 @@ makefolder("SimpleUI/elements")
 writefile("SimpleUI/manifest.txt", data.id)
 
 
-for index, value in files do
+for index, value in pairs(files) do
     if base_files[index] then
         writefile("SimpleUI/" .. index, value)
     else
