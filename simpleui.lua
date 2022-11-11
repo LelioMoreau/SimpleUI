@@ -13,7 +13,7 @@ local function Set(tbl)
 end
 
 local base_files = Set {
-    "index.lua", "config.lua", "save.lua"
+    "index.lua", "config.lua", "save.lua", "simpleui.lua"
 }
 
 local _M = {
