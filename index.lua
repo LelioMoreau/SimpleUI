@@ -212,7 +212,7 @@ Library.new = function()
         base_frame.Position = UDim2.new(0, x, 0, y)
     end
     
-    self.add_tap = function(name,icon)
+    self.add_tab = function(name,icon)
         local tab = {}
         local elements = {}
         -- UI elements --
