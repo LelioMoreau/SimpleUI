@@ -29,14 +29,11 @@ Library.save = function()
 end
 
 Library.get_saved_or_default = function(name, default)
-    if typeof(default) == "Color3" then
-        return default
-    end
     if Library._SaveTab[name] ~= nil then
         if type(Library._SaveTab[name]) == "table" then
             local t = Library._SaveTab[name]
             if t._type == "Color3" then
-                return Color3.fromHSV(t.R, t.G, t.B)
+                return Color3.new(t.R, t.G, t.B)
             end
             if t._type == "EnumItem" then
                 return Enum[t.p][t.n]
