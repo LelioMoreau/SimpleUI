@@ -33,7 +33,7 @@ local files = {}
 if isfile("SimpleUI/manifest.txt") then
     local manifest = readfile("SimpleUI/manifest.txt")
 
-    if manifest == data.id then
+    if tostring(manifest) == tostring(data.id) then
         return _M
     end
 end
