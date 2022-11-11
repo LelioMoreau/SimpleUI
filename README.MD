@@ -15,20 +15,15 @@ Test the menu 🤔
 -------------
 Execute this code to open an example.
 ```lua
-local loader = loadstring(game:HttpGet("https://github.com/LelioMoreau/SimpleUI/releases/download/main/test_elements.lua"))()
+local loader = loadstring(game:HttpGet("https://raw.githubusercontent.com/LelioMoreau/SimpleUI/main/test_elements.lua"))()
 ```
 
 Installation 📦
 ------------
-1. Download [**simpleui**]("https://github.com/LelioMoreau/SimpleUI/releases/download/main/simpleui.lua").
-2. Drag the simpleui file into your **workspace** folder.
-3. **Enjoy**!
-
-## OR
 Put this code at the start of your script.
 
 ```lua
-local loader = loadstring(game:HttpGet("https://github.com/LelioMoreau/SimpleUI/releases/download/main/simpleui.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LelioMoreau/SimpleUI/main/simpleui.lua"))()
 ```
 
 Getting started 🚀
