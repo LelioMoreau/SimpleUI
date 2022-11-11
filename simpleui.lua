@@ -30,7 +30,7 @@ local data = HttpService:JSONDecode(release)
 local files = setmetatable({}, {
     __newindex = function(t, k, v)
         printconsole("Downloading " .. k, 0, 200, 255)
-        rawset(t, k, game:HttGet(v))
+        rawset(t, k, game:HttpGet(v))
     end
 })
 
