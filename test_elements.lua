@@ -12,17 +12,11 @@ local simpleui = loader.simpleUI()
 local ui = simpleui.new()
 
 -- load ui elements --
-print("button")
 local button = loader.element("button")
-print("text")
 local textbox = loader.element("textbox")
-print("checkbox")
 local toggle = loader.element("toggle")
-print("slider")
 local dropdown = loader.element("dropdown")
-print("dropdown")
 local slider = loader.element("slider")
-print("colorpicker")
 local colorpicker = loader.element("colorpicker")
 
 -- set config file name and load save system --
@@ -35,7 +29,7 @@ local tab2 = ui.add_tab("Other Tab", "6031229361")
 -- create ui elements --
 
 local example_btn = tab.add(button.new("My Button", "button"))
-local example_txt = tab.add(textbox.new("My Textbox"))
+local example_txt = tab.add(textbox.new("My Textbox", ""))
 local example_tgl = tab.add(toggle.new("My Toggle"))
 
 local example_colorpicker = tab2.add(colorpicker.new("My Colorpicker", Color3.fromRGB(255, 255, 255)))
