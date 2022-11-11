@@ -15,7 +15,7 @@ Test the menu 🤔
 -------------
 Execute this code to open an example.
 ```lua
-local loader = loadstring(game:HttpGet("https://raw.githubusercontent.com/LelioMoreau/SimpleUI/main/test_elements.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LelioMoreau/SimpleUI/main/test_elements.lua"))()
 ```
 
 Installation 📦
@@ -23,7 +23,7 @@ Installation 📦
 Put this code at the start of your script.
 
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LelioMoreau/SimpleUI/main/simpleui.lua"))()
+local loader = loadstring(game:HttpGet("https://raw.githubusercontent.com/LelioMoreau/SimpleUI/main/simpleui.lua"))()
 ```
 
 Getting started 🚀
