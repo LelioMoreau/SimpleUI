@@ -125,7 +125,7 @@ Library.new = function()
         -- base frame --
         base_frame.Name = "base_frame"
         base_frame.Parent = tabs_mouse_override
-        base_frame.BackgroundColor3 = Config.base_frame.background_color
+        base_frame.BackgroundColor3 = Config.theme.base_frame.background_color
         base_frame.Position = UDim2.new(0, 310, 0, 214)
         base_frame.Size = UDim2.new(0, 0, 0, 0)
 
@@ -141,14 +141,14 @@ Library.new = function()
         -- tabs frame --
         tabs_frame.Name = "tabs_frame"
         tabs_frame.Parent = base_frame
-        tabs_frame.BackgroundColor3 = Config.tabs_frame.background_color
+        tabs_frame.BackgroundColor3 = Config.theme.tabs_frame.background_color
         tabs_frame.Position = UDim2.new(0, 15, 0, 49)
         tabs_frame.Size = UDim2.new(0, 0, 0, 0)
 
         tabs_frame_corner.Name = "tabs_frame_corner"
         tabs_frame_corner.Parent = tabs_frame
 
-        tabs_frame_stroke.Color = Config.tabs_frame.stroke_color
+        tabs_frame_stroke.Color = Config.theme.tabs_frame.stroke_color
         tabs_frame_stroke.Thickness = 1.6
         tabs_frame_stroke.Name = "tabs_frame_stroke"
         tabs_frame_stroke.Parent = tabs_frame
@@ -181,11 +181,11 @@ Library.new = function()
         -- content frame --
         content_frame.Name = "content_frame"
         content_frame.Parent = base_frame
-        content_frame.BackgroundColor3 = Config.content_frame.background_color
+        content_frame.BackgroundColor3 = Config.theme.content_frame.background_color
         content_frame.Position = UDim2.new(0.345454544, 0, 0.0500000007, 0)
         content_frame.Size = UDim2.new(0, 0, 0, 0)
 
-        content_frame_stroke.Color = Config.content_frame.stroke_color
+        content_frame_stroke.Color = Config.theme.content_frame.stroke_color
         content_frame_stroke.Thickness = 1.6
         content_frame_stroke.Name = "content_frame_stroke"
         content_frame_stroke.Parent = content_frame
