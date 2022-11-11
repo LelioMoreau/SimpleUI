@@ -41,7 +41,15 @@ end
 for index, value in pairs(data.assets) do
     local url = value.browser_download_url
     printconsole("Downloading " .. value.name, 0, 200, 255)
-    files[value.name] = game:HttpGet(url .. "?t=" .. os.time())
+    repeat
+        xpcall(function()
+            files[value.name] = game:HttpGet(url .. "?t=" .. os.time())
+        end, function(err)
+            printconsole("Error downloading " .. value.name .. " : " .. err, 255, 0, 0)
+            wait(1)
+        end)
+    until files[value.name]
+    
 end
 
 makefolder("SimpleUI")
