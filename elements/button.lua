@@ -45,7 +45,7 @@ Library.new = function(name: string, btnText: string)
 
     -- Functions --
 
-    self.set_callback = function(func: () -> ())
+    self.set_callback = function(func)
         callback = func
     end
 
