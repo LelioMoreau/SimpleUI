@@ -25,7 +25,7 @@ local _M = {
     end
 }
 
-local release = game:HttpGet(github)
+local release = game:HttpGet(github .. "?t=" .. os.time())
 local data = HttpService:JSONDecode(release)
 local files = setmetatable({}, {
     __newindex = function(t, k, v)
