@@ -62,7 +62,7 @@ Library.new = function(name: string, default: any)
         return is_pressed
     end
     
-    self.set = function(key: Enum.UserInputType | Enum.KeyCode)
+    self.set = function(key: any) -- Enum.UserInputType | Enum.KeyCode
         value = key
         keybind_button.Text = key.Name
     end
