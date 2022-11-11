@@ -2,7 +2,7 @@ local loader
 if isfile("simpleui.lua") then
     loader = loadfile("simpleui.lua")
 else
-    loader = loadstring(game:HttpGet("https://github.com/LelioMoreau/SimpleUI/releases/download/main/simpleui.lua"))()
+    loader = loadstring(game:HttpGet("https://raw.githubusercontent.com/LelioMoreau/SimpleUI/main/simpleui.lua"))()
 end
 
 -- create new simpleUI instance --
