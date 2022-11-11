@@ -27,12 +27,7 @@ local _M = {
 
 local release = game:HttpGet(github .. "?t=" .. os.time())
 local data = HttpService:JSONDecode(release)
-local files = setmetatable({}, {
-    __newindex = function(t, k, v)
-        printconsole("Downloading " .. k, 0, 200, 255)
-        rawset(t, k, game:HttpGet(v .. "?t=" .. os.time()))
-    end
-})
+local files = {}
 
 -- Check if the version is up to date.
 if isfile("SimpleUI/manifest.txt") then
@@ -45,7 +40,8 @@ end
 
 for index, value in pairs(data.assets) do
     local url = value.browser_download_url
-    files[value.name] = url
+    printconsole("Downloading " .. value, 0, 200, 255)
+    files[value.name] = game:HttpGet(url .. "?t=" .. os.time())
 end
 
 makefolder("SimpleUI")
