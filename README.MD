@@ -2,7 +2,7 @@ SimpleUI Framework
 ==================
 > SimpleUI is a framework used to create simple user interfaces in roblox. It is designed to be easy to use and easy to understand. It is also designed to be easy to extend and modify.
 
-Features 📁
+Features 🤯
 --------
 * Easy to use.
 * Easy to customize.
@@ -11,14 +11,14 @@ Features 📁
 * Easy to understand.
 * Easy to use in other projects.
 
-Test the menu
+Test the menu 🤔
 -------------
 Execute this code to open an example.
 ```lua
 local loader = loadstring(game:HttpGet("https://github.com/LelioMoreau/SimpleUI/releases/download/main/test_elements.lua"))()
 ```
 
-Installation
+Installation 📦
 ------------
 1. Download [**simpleui**]("https://github.com/LelioMoreau/SimpleUI/releases/download/main/simpleui.lua").
 2. Drag the simpleui file into your **workspace** folder.
@@ -31,7 +31,7 @@ Put this code at the start of your script.
 local loader = loadstring(game:HttpGet("https://github.com/LelioMoreau/SimpleUI/releases/download/main/simpleui.lua"))()
 ```
 
-Getting started !
+Getting started 🚀
 -------------
 > Create a new SimpleUI instance
 ```lua
@@ -75,7 +75,7 @@ local example = tab.add(colorpicker.new("Colorpicker Name", Color3.fromRGB(255, 
 local value = example.get()
 ```
 
-Elements
+Elements 📚
 --------
 | Element | Description | Constructor |
 | ------- | ----------- | ---------- |
@@ -83,11 +83,11 @@ Elements
 | toggle | toggle a boolean value | toggle.<span style="color:#eb11de">new</span>(name: <span style="color:#11eb53">string</span>, default: <span style="color:#11eb53">bool</span>) |
 | dropdown | select one option in a list of options | dropdown.<span style="color:#eb11de">new</span>(name: <span style="color:#11eb53">string</span>, options: <span style="color:#11eb53">&lt;string&gt;{}</span>, default: <span style="color:#11eb53">string</span>) |
 | slider | select a number in range | slider.<span style="color:#eb11de">new</span>(name: <span style="color:#11eb53">string</span>, min: <span style="color:#11eb53">number</span>, max: <span style="color:#11eb53">number</span>, default: <span style="color:#11eb53">number</span>, decimals: <span style="color:#11eb53">number</span>) |
-| input | enter a text input | input.<span style="color:#eb11de">new</span>(name: <span style="color:#11eb53">string</span>, default: <span style="color:#11eb53">string</span>) |
+| textbox | enter a text input | textbox.<span style="color:#eb11de">new</span>(name: <span style="color:#11eb53">string</span>, default: <span style="color:#11eb53">string</span>) |
 | keybind | execute action on key pressed | keybind.<span style="color:#eb11de">new</span>(name: <span style="color:#11eb53">string</span>, default: <span style="color:#11eb53">UserInputType</span> &#124; <span style="color:#11eb53">KeyCode</span>) |
 | colorpicker | select a color with a color wheel | colorpicker.<span style="color:#eb11de">new</span>(name: <span style="color:#11eb53">string</span>, default: <span style="color:#11eb53">Color3</span>) |
 
-Contributing
+Contributing 🤝
 ------------
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`.
@@ -95,12 +95,12 @@ Contributing
 4. Push to the branch: `git push origin my-new-feature`.
 5. Submit a pull request :D
 
-Common issues
+Common issues 🐛
 -------------
 > I get an error when I try to load the framework.
 * Delete "**SimpleUI/manifest.txt**".
 * Make sure you have the latest version of the framework. If you still get an error, please open an issue.
 
-License
+License 📜
 -------
 SimpleUI is licensed under the MIT license. See LICENSE for more information.
