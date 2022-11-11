@@ -1,6 +1,6 @@
 local Library = {}
 
-Library.new = function(name: string, default: table)
+Library.new = function(name: string, default: Color3)
     local self = {}
 
     -- Variables --
@@ -60,7 +60,7 @@ Library.new = function(name: string, default: table)
 
     -- Functions --
 
-    self.set_callback = function(func: (table) -> ())
+    self.set_callback = function(func)
         callback = func
     end
     
