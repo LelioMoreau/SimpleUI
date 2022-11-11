@@ -1,5 +1,12 @@
-SimpleUI Framework
-==================
+
+<div id="header" align="center">
+    <h1 style="border-bottom: none;">SimpleUI Framework</h1>
+    <img src="https://img.shields.io/badge/Version-1.0.0-blue.svg" alt="Version 1.0.0">
+    <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License MIT">
+    <img src="https://img.shields.io/github/stars/LelioMoreau/SimpleUI?color=brightgreen&label=Stars" alt="Stars">
+    <br><br>
+</div>
+
 > SimpleUI is a framework used to create simple user interfaces in roblox. It is designed to be easy to use and easy to understand. It is also designed to be easy to extend and modify.
 
 Features 🤯
