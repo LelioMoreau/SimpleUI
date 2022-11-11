@@ -38,7 +38,7 @@ local ui = simpleui.new()
 
 > Create a new tab
 ```lua
-local tab = ui.addTab("Tab Name", "Tab Icon (roblox asset id)")
+local tab = ui.add_tab("Tab Name", "Tab Icon (roblox asset id)")
 ```
 
 > Require elements
@@ -54,7 +54,7 @@ local colorpicker = loader.element("colorpicker")
 
 > Create a new button
 ```lua
-local example = tab.add(button.new("Button Name"))
+local example = tab.add(button.new("Button Name", "example"))
 
 -- add a callback to the button
 example.set_callback(function()
