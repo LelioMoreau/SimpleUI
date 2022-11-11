@@ -40,7 +40,7 @@ end
 
 for index, value in pairs(data.assets) do
     local url = value.browser_download_url
-    printconsole("Downloading " .. value, 0, 200, 255)
+    printconsole("Downloading " .. value.name, 0, 200, 255)
     files[value.name] = game:HttpGet(url .. "?t=" .. os.time())
 end
 
