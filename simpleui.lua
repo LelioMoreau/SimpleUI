@@ -2,7 +2,7 @@
 local HttpService = game:GetService("HttpService")
 
 -- Github release for last version.
-local github = "https://api.github.com/repos/LelioMoreau/SimpleUI/releases/latest"
+local github = "https://api.github.com/repos/LelioMoreau/SimpleUI/releases/latest?t=" .. os.time()
 
 local function Set(tbl)
     local set = {}
@@ -30,7 +30,7 @@ local data = HttpService:JSONDecode(release)
 local files = setmetatable({}, {
     __newindex = function(t, k, v)
         printconsole("Downloading " .. k, 0, 200, 255)
-        rawset(t, k, game:HttpGet(v))
+        rawset(t, k, game:HttpGet(v .. "?t=" .. os.time()))
     end
 })
 
