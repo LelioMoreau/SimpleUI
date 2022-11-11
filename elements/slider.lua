@@ -1,6 +1,6 @@
 local Library = {}
 
-Library.new = function(name: string, min: number, max: number, default: number, decimals: number | nil) : table
+Library.new = function(name: string, min: number, max: number, default: number, decimals) : table
     local self = {}
 
     -- Variables --
