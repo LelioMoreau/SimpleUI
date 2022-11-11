@@ -14,7 +14,7 @@ if not SaveLibrary then
 end
 
 if not Config then
-    Config = loadfile("SimpleUI/Config.lua")()
+    Config = loadfile("SimpleUI/config.lua")()
 end
 
 local Library = {}
