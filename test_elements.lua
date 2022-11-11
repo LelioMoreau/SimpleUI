@@ -1,8 +1,8 @@
 local loader
 if isfile("simpleui.lua") then
-    loader = loadfile("simpleui.lua")
+    loader = loadfile("simpleui.lua")()
 else
-    loader = loadstring(game:HttpGet("https://raw.githubusercontent.com/LelioMoreau/SimpleUI/main/simpleui.lua"))()
+    loader = loadstring(game:HttpGet("https://raw.githubusercontent.com/LelioMoreau/SimpleUI/main/simpleui.lua?t="..os.time()))()
 end
 
 -- create new simpleUI instance --
@@ -12,23 +12,29 @@ local simpleui = loader.simpleUI()
 local ui = simpleui.new()
 
 -- load ui elements --
+print("button")
 local button = loader.element("button")
+print("text")
 local textbox = loader.element("textbox")
+print("checkbox")
 local toggle = loader.element("toggle")
+print("slider")
 local dropdown = loader.element("dropdown")
+print("dropdown")
 local slider = loader.element("slider")
+print("colorpicker")
 local colorpicker = loader.element("colorpicker")
 
 -- set config file name and load save system --
 ui.set_save_name("my_exemple_menu.json")
 
 -- create new tabs --
-local tab = ui.addTab("Tab Name", "6026568213")
-local tab2 = ui.addTab("Other Tab", "6031229361")
+local tab = ui.add_tab("Tab Name", "6026568213")
+local tab2 = ui.add_tab("Other Tab", "6031229361")
 
 -- create ui elements --
 
-local example_btn = tab.add(button.new("My Button"))
+local example_btn = tab.add(button.new("My Button", "button"))
 local example_txt = tab.add(textbox.new("My Textbox"))
 local example_tgl = tab.add(toggle.new("My Toggle"))
 
