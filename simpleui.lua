@@ -46,7 +46,7 @@ for index, value in pairs(data.assets) do
             files[value.name] = game:HttpGet(url .. "?t=" .. os.time())
         end, function(err)
             printconsole("Error downloading " .. value.name .. " : " .. err, 255, 0, 0)
-            wait(1)
+            task.wait(1)
         end)
     until files[value.name]
     
