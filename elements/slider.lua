@@ -99,11 +99,9 @@ Library.new = function(name: string, min: number, max: number, default: number, 
 
     self.set = function(val: number)
         value = self.round(val, decimals)
-        if value ~= val then
-            self.update()
-            callback(value)
-            SaveLibrary.save_value(name, value)
-        end
+        self.update()
+        callback(value)
+        SaveLibrary.save_value(name, value)
     end
 
     self.get_name = function() : string
