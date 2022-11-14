@@ -201,6 +201,7 @@ Library.new = function()
         content_frame_container.BorderSizePixel = 0
         content_frame_container.Size = UDim2.new(0, 0, 0, 0)
         content_frame_container.ScrollBarThickness = 7
+        content_frame_container.AutomaticCanvasSize = Enum.AutomaticSize.Y
 
         content_frame_list_layout.Name = "content_frame_list_layout"
         content_frame_list_layout.Parent = content_frame_container
