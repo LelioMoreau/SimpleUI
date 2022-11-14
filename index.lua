@@ -527,6 +527,10 @@ Library.new = function()
         return base_frame.AbsoluteSize
     end
 
+    self.get_base = function()
+        return base_gui
+    end
+
     self.get_position = function()
         return base_frame.AbsolutePosition
     end
