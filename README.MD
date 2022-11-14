@@ -1,7 +1,7 @@
 
 <div id="header" align="center">
     <h1 style="border-bottom: none;">SimpleUI Framework</h1>
-    <img src="https://img.shields.io/badge/Version-1.0.1-blue.svg" alt="Version 1.0.1">
+    <img src="https://img.shields.io/badge/Version-1.0.2-blue.svg" alt="Version 1.0.2">
     <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License MIT">
     <img src="https://img.shields.io/github/stars/LelioMoreau/SimpleUI?color=brightgreen&label=Stars" alt="Stars">
     <br><br>
